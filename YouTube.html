@@ -4,11 +4,22 @@
 
     <head>
         <title>YouTube</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
         <style>
+            p{
+                font-family: Roboto, Arial;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
             .thumbnail{
                 width: 300px;
                 display: block;
+            }
+            .thumbnail-layout{
+                margin-bottom: 12px;
             }
 
             .search-bar{
@@ -23,8 +34,41 @@
             }
 
             .video-title{
-                 
+                 margin-top: 0;
+                 font-size: 14px;
+                 font-weight: bold;
+                 line-height: 20px;
+                 margin-bottom: 12px;
             }
+
+            .video-author,
+            .video-details{
+                font-size: 12px;
+                color: rgb(54, 54, 54);
+                
+            }
+
+            .video-author{
+                margin-bottom: 4px;
+            }
+
+
+            .channel-pic{
+                width: 40px;
+                border-radius: 30px;
+            }
+            .channel-pic-layout{
+                width: 50px;
+                display: inline-block;
+                vertical-align: top;
+                
+            }
+
+            .video-text{
+                display: inline-block;
+                width: 200px;
+            }
+
 
            
 
@@ -36,34 +80,56 @@
     <body>
         <input class="search-bar" type="text" placeholder="Search">
         
-
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-            <p class="video-title">   
-                Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
+            <div class="thumbnail-layout">
+                <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+            </div>
+            <div>
+                <div class="channel-pic-layout">
+                    <img class="channel-pic" src="channelPics/channel-1.jpeg">
+                </div>
 
-            <p class="video-author"> 
-                Marques Brownlee
-            </p>
-
-            <p class="video-details">
-                3.4M views · 6 months ago
-            </p>
+                <div class="video-text">
+                    <p class="video-title">   
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+        
+                    <p class="video-author"> 
+                        Marques Brownlee
+                    </p>
+        
+                    <p class="video-details">
+                        3.4M views · 6 months ago
+                    </p>
+                </div>
+                
+            </div> 
         </div>
 
         <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-            <p class="video-title">     
-            Try Not To Laugh Challenge #9
-            </p>
-            <p class="video-author"> 
-                Markiplier
-            </p>
+            <div class="thumbnail-layout">
+                <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div>
+                <div class="channel-pic-layout">
+                    <img class="channel-pic" src="channelPics/channel-2.jpeg">
+                </div>
 
-            <p class="video-details">
-                19M views · 4 years ago
-            </p>
+                <div class="video-text">
+                    <p class="video-title">   
+                        Try Not To Laugh Challenge #9
+                    </p>
+        
+                    <p class="video-author"> 
+                        Markiplier
+                    </p>
+        
+                    <p class="video-details">
+                        19M views · 4 years ago
+                    </p>
+                </div>
+                
+            </div> 
         </div>
 
     </body>
