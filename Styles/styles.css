@@ -5,6 +5,11 @@ p{
     margin-bottom: 0;
 }
 
+body{
+    margin: 0;
+}
+
+
 .thumbnail{
     width: 100%;
 }
@@ -13,9 +18,6 @@ p{
     margin-bottom: 12px;
 }
 
-.search-bar{
-    display: block;
-}
 
 .video-grid{
     display: grid;
@@ -24,9 +26,6 @@ p{
     row-gap: 20px;
 }
 
-.video-preview{
-
-}
 
 .video-info-grid{
     display: grid;
