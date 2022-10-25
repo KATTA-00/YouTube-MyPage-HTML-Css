@@ -6,4 +6,29 @@
     bottom: 0px;
     width: 65px;
     background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+}
+
+.sidebar-link{
+    height: 80px;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar-link:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.sidebar-link img {
+    height: 30px;
+}
+
+.sidebar-link div {
+    padding-top: 5px;
+    font-size: 12px;
 }
